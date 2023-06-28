@@ -211,6 +211,7 @@ header nav {
     display: flex;
     margin-left: 10%;
     background-color: var(--Bleu3-color);
+    transition: transform 0.5s ease;
 }
 
 .slider-text {
@@ -243,7 +244,7 @@ header nav {
     height: 250px;
 }
 
-#fleche {
+#fleche_slide {
     width: 200px;
     position: absolute;
     right: -80px;
@@ -293,6 +294,11 @@ header nav {
     position: relative;
     margin-top: -230px;
     left: -15px;
+    transition: transform 0.3s ease;
+}
+
+#bio-photo1:hover {
+    transform: scale(1.05);
 }
 
 .bio-droite p {
@@ -321,6 +327,20 @@ header nav {
     width: 300px;
     height: auto;
     margin: 8em 0em 0em 3em;
+    transition: transform 0.3s ease;
+}
+
+#bio-photo2:hover {
+    transform: scale(1.1);
+}
+
+.head_hover {
+    transition: transform 0.3s ease;
+}
+
+.head_hover:hover {
+    transform: scale(1.05);
+
 }
 
 /* Quatrième section */

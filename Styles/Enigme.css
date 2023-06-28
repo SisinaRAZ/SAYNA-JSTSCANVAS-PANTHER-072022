@@ -192,7 +192,9 @@ header nav {
 }
 
 .hero-text-enigme p{
-    margin-top: 20px;
+    width: 75%;
+    margin-top: 45px;
+    font-size: 10px;
 }
 
 .hero-text-enigme, .div-hero-enigme #hero-img1 {    
@@ -206,6 +208,12 @@ header nav {
 
 .div-hero-enigme #hero-img1 {
     width: 600px;
+}
+
+
+#logo_souris{
+    width: 30px;
+    margin-left: 30%;
 }
 
 .div-hero-enigme #hero-img2 {
