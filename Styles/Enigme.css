@@ -1,0 +1,414 @@
+/* CopyRight SisinaRaz */
+@font-face {
+    font-family: "Panthera";
+    src: url("../font/PantheraRegular-MVZ9J.ttf");
+}
+
+@font-face {
+    font-family: "BEYNO";
+    src: url("../font/FontsFree-Net-BEYNO.ttf");
+}
+
+@font-face {
+    font-family: "WakandaForever";
+    src: url("../font/WakandaForever-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("../font/Cantarell-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White-color: #fff;
+    --Gray-color: #f2cef2;
+    --Violet-color: #9e91b7;
+    --Rose-color: #df99f2;
+    --Bleu1-color: #3d2da6;
+    --Bleu2-color: #07338c;
+    --Bleu3-color: #021740;
+}
+
+/* Animations */
+html {
+    animation: body 2s ease-out forwards;
+}
+
+html {
+    animation: html 2s ease-out;
+}
+
+@keyframes html {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+/* Général */
+body {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Panthera";
+    font-size: 68px;
+    color: var(--Violet-color);
+}
+
+h2 {
+    font-family: "BEYNO";
+    color: var(--Violet-color);
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "BEYNO";
+    color: var(--Violet-color);
+    line-height: 40px;
+}
+
+h4 {
+    font-family: "Cantarell";
+    color: #3d2da6;
+}
+
+p {
+    font-family: "Cantarell";
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: justify;
+}
+
+a {
+    color: #fff;
+}
+
+/* Header */
+nav .logo_header img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo_header img:hover {
+    filter: invert(70%) sepia(20%) saturate(5) hue-rotate(270deg);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 100px;
+    margin: auto;
+}
+
+.menu_header ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.menu_header ul li a {
+    text-decoration: none;
+    font-family: "BEYNO";
+    cursor: pointer;
+    padding: 1px;
+}
+
+.menu_header ul li a.active {
+    color: var(--Violet-color);
+    text-decoration-color: var(--Violet-color);
+    border-bottom: 2px solid;
+}
+
+.menu_header ul li a:hover {
+    border-bottom: 2px solid;
+    color: var(--White-color);
+}
+
+/* Main */
+/* Section  */
+.hero-enigme {
+    width: 90%;
+    background-image: url("../Illustrations/Enigme/Pantherenigme1.png");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: -10em;
+}
+
+.div-hero {
+    width: 30%;
+    height: auto;
+    color: white;
+    padding-left: 13%;
+    padding-top: 10%;
+}
+
+.div-hero-enigme {
+    float: right;
+    width: 35%;
+    height: auto;
+    color: white;
+    padding-top: 25%;
+    margin-right: 5em;
+}
+
+.div-hero-enigme h1{
+    font-family: "BEYNO";
+    color: var(--Violet-color);
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-align: justify;
+    padding: 5px;
+}
+
+.hero-text-enigme {
+    margin-top: 40px;
+    width: 30%;
+    text-align: justify;    
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+.hero-text-enigme p{
+    margin-top: 20px;
+}
+
+.hero-text-enigme, .div-hero-enigme #hero-img1 {    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CopyRight SisinaRaz */
+
+.div-hero-enigme #hero-img1 {
+    width: 600px;
+}
+
+.div-hero-enigme #hero-img2 {
+    width: 700px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+#text-enigme {
+    width: 70%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-areas: 
+        "text text"
+        "alpha paragraphe";
+    gap: 1em;
+    margin-bottom: 100px;
+}
+
+#text-enigme h3{
+    grid-area: text;
+    font-family: "WakandaForever";
+    letter-spacing: 7px;
+    line-height: 30px;
+    margin-bottom: 2em;
+}
+
+#text-enigme p .car {
+    font-family: "WakandaForever";
+}
+
+#form {
+    margin-top: 150px;
+}
+
+#text-enigme input {
+    width: 75%;
+    padding: 7px 7px 7px 25px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--Gray-color);
+    color: var(--Gray-color);
+}
+
+#text-enigme input::placeholder {
+    font-size: 11px;
+    color: var(--Gray-color);
+}
+
+#text-enigme #div-btn{
+    width: 75%;
+    text-align: center;
+}
+
+#text-enigme button{
+    width: 120px;
+    padding: 9px;
+    border-radius: 50px;
+    background-color: var(--Gray-color);
+    font-size: 11px;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease;
+    border: none;
+}
+
+#text-enigme button:hover{
+    box-shadow: 0 0 20px var(--Gray-color);
+}
+
+.question {
+    grid-area: paragraphe;
+    width: 30vw;
+    text-align: center;
+    margin-top: 5em;
+    margin-left: 5em;
+}
+
+.question div, .question div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.question div p {
+    width: 100%;
+}
+
+.question div {
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+}
+
+.question div img {
+    width: 550px;
+    margin-left: 15px;
+}
+
+.enigme-droite{
+    grid-area: alpha;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 7em;
+    width: 100%;
+    padding: 7em;
+    background-image: url("../Illustrations/Logo/back_footer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-image #bulle-footer,
+.footer-image #logo-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-image #bulle-footer {
+    width: 200px;
+}
+
+.footer-image #logo-footer {
+    width: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-footer {
+    width: 95%;
+    display: grid;
+    grid-template-areas:
+        ". . footer-image footer-links footer-socials"
+        ". . footer-image footer-text footer-text";
+}
+
+.footer-image {
+    grid-area: footer-image;
+    position: relative;
+    margin-right: 5em;
+    transition: all 0.5s ease-out;
+}
+
+.footer-image:hover {
+    transform: scale(1.1);
+}
+
+.footer-links {
+    grid-area: footer-links;
+    color: white;
+}
+
+.footer-links p {
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-links ul li a {
+    line-height: 25px;
+    font-family: "cantarell";
+    cursor: pointer;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials {
+    grid-area: footer-socials;
+}
+
+.footer-socials p {
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-socials img {
+    width: 30px;
+    margin-right: 20px;
+    transition: all 0.5s ease-out;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+
+.footer-text {
+    margin-top: 80px;
+    grid-area: footer-text;
+}
+
+/* CopyRight SisinaRaz */

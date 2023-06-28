@@ -1,0 +1,491 @@
+/* CopyRight SisinaRaz */
+@font-face {
+    font-family: "Panthera";
+    src: url("../font/PantheraRegular-MVZ9J.ttf");
+}
+
+@font-face {
+    font-family: "BEYNO";
+    src: url("../font/FontsFree-Net-BEYNO.ttf");
+}
+
+@font-face {
+    font-family: "WakandaForever";
+    src: url("../font/WakandaForever-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("../font/Cantarell-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White-color: #fff;
+    --Gray-color: #f2cef2;
+    --Violet-color: #9e91b7;
+    --Rose-color: #df99f2;
+    --Bleu1-color: #3d2da6;
+    --Bleu2-color: #07338c;
+    --Bleu3-color: #021740;
+}
+
+/* Animations */
+html {
+    animation: body 2s ease-out forwards;
+}
+
+html {
+    animation: html 2s ease-out;
+}
+
+@keyframes html {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+}
+
+/* Général */
+body {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, #11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Panthera";
+    font-size: 68px;
+    color: var(--Violet-color);
+}
+
+h2 {
+    font-family: "BEYNO";
+    color: var(--Violet-color);
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: "BEYNO";
+    color: var(--Violet-color);
+    line-height: 40px;
+}
+
+h4 {
+    font-family: "Cantarell";
+    color: #3d2da6;
+}
+
+p {
+    font-family: "Cantarell";
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: justify;
+}
+
+a {
+    color: #fff;
+}
+
+/* Bordure sur le côté gauche */
+.statics {
+    position: sticky;
+    top: 0px;
+    margin-top: -150px;
+    margin-left: 20px;
+    writing-mode: vertical-lr;
+    overflow: hidden;
+    height: 350px;
+    cursor: pointer;
+}
+
+#border1 {
+    border: 2px solid var(--Violet-color);
+}
+
+#border2 {
+    color: var(--Violet-color);
+    border: 2px solid var(--Violet-color);
+    margin-top: -10px;
+    margin-left: 8px;
+    float: left;
+    height: 60%;
+}
+
+.icons_fitt {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 340px;
+    text-align: end;
+}
+
+.icons_fitt img {
+    width: 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons_fitt img:hover {
+    filter: invert(0%) sepia(100%) saturate(0);
+}
+
+/* Header */
+nav .logo_header img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo_header img:hover {
+    filter: invert(70%) sepia(20%) saturate(5) hue-rotate(270deg);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 100px;
+    margin: auto;
+}
+
+.menu_header ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.menu_header ul li a {
+    text-decoration: none;
+    font-family: "BEYNO";
+    cursor: pointer;
+    padding: 1px;
+}
+
+.menu_header ul li a.active {
+    color: var(--Violet-color);
+    text-decoration-color: var(--Violet-color);
+    border-bottom: 2px solid;
+}
+
+.menu_header ul li a:hover {
+    border-bottom: 2px solid;
+    color: var(--White-color);
+}
+
+/* Main */
+/* Première section */
+.hero_flex {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.hero_image img {
+    width: 810px;
+    height: 600px;
+    margin: auto;
+}
+
+.container0 {
+    width: 95%;
+    float: right;
+    margin-top: -15em;
+}
+
+/* Deuxième section */
+.slider {
+    width: 90%;
+    display: flex;
+    margin-left: 10%;
+    background-color: var(--Bleu3-color);
+}
+
+.slider-text {
+    margin-top: 20px;
+    padding: 1em;
+}
+
+.slider-text p {
+    text-align: justify;
+    height: auto;
+    overflow: auto;
+}
+
+
+#killmonger {
+    position: relative;
+    margin-bottom: -70px;
+    align-items: center;
+}
+
+#killmonger img {
+    width: auto;
+    height: 20em;
+    margin-top: -2em;
+    margin-left: 1.5em;
+}
+
+.slider-img {
+    width: auto;
+    height: 250px;
+}
+
+#fleche {
+    width: 200px;
+    position: absolute;
+    right: -80px;
+    top: 41em;
+    cursor: pointer;
+}
+
+/* Troisième section */
+.bio {
+    display: grid;
+    width: 80%;
+    margin: 10% auto;
+    grid-template-columns: 2fr 1fr;
+    gap: 10%;
+}
+
+.bio-gauche {
+    text-align: justify;
+}
+
+.bio-droite div {
+    background-color: rgba(255, 255, 255, 0.863);
+    font-family: "Cantarell";
+    border-radius: 5px;
+    text-align: justify;
+    width: 365px;
+    height: 520px;
+    padding: 50px;
+    margin-top: 12em;
+    padding-bottom: 150px;
+}
+
+/* CopyRight SisinaRaz */
+
+.bio-droite label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+
+#bio-photo1 {
+    width: 300px;
+    height: auto;
+    float: inline-start;
+    position: relative;
+    margin-top: -230px;
+    left: -15px;
+}
+
+.bio-droite p {
+    color: var(--Bleu3-color);
+    line-height: 12px;
+}
+
+.bio-droite span {
+    font-weight: bold;
+}
+
+.bio-droite button {
+    display: inline-flex;
+    margin-left: 1.2em;
+    font-size: 10px;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: var(--Bleu1-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#bio-photo2 {
+    width: 300px;
+    height: auto;
+    margin: 8em 0em 0em 3em;
+}
+
+/* Quatrième section */
+.formulaire_content {
+    background-image: url(../Illustrations/Accueil/Pantherhome7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    margin-top: 5em;
+    background-image: linear-gradient(0deg, #ffffff0a, #ffffff0a, #ffffff74, #fff);
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+    border-radius: 100px;
+}
+
+.titre_1 {
+    font-size: 11px;
+    color: var(--Bleu3-color);
+}
+
+.titre_2 {
+    font-size: 30px;
+    color: var(--Bleu3-color);
+    margin-bottom: 1em;
+}
+
+input {
+    width: 520px;
+    margin: 5px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 38px;
+    border: 1px solid var(--Bleu3-color);
+    background-color: transparent;
+}
+
+textarea {
+    width: 520px;
+    padding: 10px 10px 10px 20px;
+    margin: 10px;
+    height: 12em;
+    border: 1px solid var(--Bleu3-color);
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.boutton_envoyer {
+    padding: 10px 20px 10px 20px;
+    border-radius: 38px;
+    border: 0px solid var(--Violet-color);
+    margin: 10px;
+    background-color: var(--White-color);
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.btn {
+    color: var(--Bleu3-color);
+}
+
+/* Footer */
+footer {
+    margin-top: 7em;
+    width: 100%;
+    padding: 7em;
+    background-image: url("../Illustrations/Logo/back_footer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-image #bulle-footer,
+.footer-image #logo-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-image #bulle-footer {
+    width: 200px;
+}
+
+.footer-image #logo-footer {
+    width: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-footer {
+    width: 95%;
+    display: grid;
+    grid-template-areas:
+        ". . footer-image footer-links footer-socials"
+        ". . footer-image footer-text footer-text";
+}
+
+.footer-image {
+    grid-area: footer-image;
+    position: relative;
+    margin-right: 5em;
+    transition: all 0.5s ease-out;
+}
+
+.footer-image:hover {
+    transform: scale(1.1);
+}
+
+.footer-links {
+    grid-area: footer-links;
+    color: white;
+}
+
+.footer-links p {
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer-links ul li a {
+    line-height: 25px;
+    font-family: "cantarell";
+    cursor: pointer;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials {
+    grid-area: footer-socials;
+}
+
+.footer-socials p {
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-socials img {
+    width: 30px;
+    margin-right: 20px;
+    transition: all 0.5s ease-out;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+
+.footer-text {
+    margin-top: 80px;
+    grid-area: footer-text;
+}
+
+/* CopyRight SisinaRaz */
+
