@@ -46,12 +46,13 @@ html {
 
 @keyframes html {
     from {
-      opacity: 0;
-      transform: translateX(-100%);
+        opacity: 0;
+        transform: translateX(-100%);
     }
+
     to {
-      opacity: 1;
-      transform: translateX(0%);
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
 
@@ -92,6 +93,12 @@ p {
     margin-bottom: 10px;
     color: #fff;
     text-align: justify;
+}
+
+label {
+    font-size: 14px;
+    margin: 20px 0px;
+    color: white;
 }
 
 a {
@@ -172,7 +179,7 @@ header nav {
     margin-right: 5em;
 }
 
-.div-hero-enigme h1{
+.div-hero-enigme h1 {
     font-family: "BEYNO";
     color: var(--Violet-color);
     line-height: 40px;
@@ -186,18 +193,19 @@ header nav {
 .hero-text-enigme {
     margin-top: 40px;
     width: 30%;
-    text-align: justify;    
+    text-align: justify;
     margin-top: 200px;
     margin-left: 300px;
 }
 
-.hero-text-enigme p{
+.hero-text-enigme p {
     width: 75%;
     margin-top: 45px;
     font-size: 10px;
 }
 
-.hero-text-enigme, .div-hero-enigme #hero-img1 {    
+.hero-text-enigme,
+.div-hero-enigme #hero-img1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -211,7 +219,7 @@ header nav {
 }
 
 
-#logo_souris{
+#logo_souris {
     width: 30px;
     margin-left: 30%;
 }
@@ -226,14 +234,14 @@ header nav {
     width: 70%;
     margin: 5% auto;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "text text"
         "alpha paragraphe";
     gap: 1em;
     margin-bottom: 100px;
 }
 
-#text-enigme h3{
+#text-enigme h3 {
     grid-area: text;
     font-family: "WakandaForever";
     letter-spacing: 7px;
@@ -264,12 +272,12 @@ header nav {
     color: var(--Gray-color);
 }
 
-#text-enigme #div-btn{
+#text-enigme #div-btn {
     width: 75%;
     text-align: center;
 }
 
-#text-enigme button{
+#text-enigme button {
     width: 120px;
     padding: 9px;
     border-radius: 50px;
@@ -280,7 +288,7 @@ header nav {
     border: none;
 }
 
-#text-enigme button:hover{
+#text-enigme button:hover {
     box-shadow: 0 0 20px var(--Gray-color);
 }
 
@@ -292,12 +300,13 @@ header nav {
     margin-left: 5em;
 }
 
-.question div, .question div img {
+.question div,
+.question div img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} 
+}
 
 .question div p {
     width: 100%;
@@ -314,7 +323,7 @@ header nav {
     margin-left: 15px;
 }
 
-.enigme-droite{
+.enigme-droite {
     grid-area: alpha;
 }
 
@@ -419,4 +428,241 @@ footer {
     grid-area: footer-text;
 }
 
-/* CopyRight SisinaRaz */
+.main-enigme {
+    margin-left: 15%;
+}
+
+.main-enigme .entete {
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+    margin-top: 5em;
+    line-height: 50px;
+}
+
+.main-enigme .content-enigme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.main-enigme .content-enigme .info-enigme {
+    background-image: url("../Illustrations/Enigme/Pantherenigme2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 385px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-enigme .content-enigme .info-enigme p {
+    width: 70%;
+    font-size: 11px;
+    margin: 2px auto;
+}
+
+.main-enigme .content-enigme .info-enigme p .titre-info {
+    display: block;
+    text-align: center;
+}
+
+.alphabet span {
+    font-family: "WakandaForever" !important;
+}
+
+.transcription {
+    width: 500px;
+}
+
+.transcription .panthera-letter {
+    font-family: "WakandaForever";
+    font-size: 28px;
+    color: var(--white-violet-1);
+    line-height: 40px;
+}
+
+.transcription form {
+    margin-top: 50px;
+}
+
+.transcription form input[type=text] {
+    width: 520px;
+    height: 56px;
+    border: 1px solid #DF99F2;
+    border-radius: 38px;
+    padding-left: 30px;
+    margin: 20px 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--White-color);
+}
+
+.transcription form .btn-enigme {
+    margin-left: 180px;
+    margin-top: 50px;
+}
+
+.transcription form .btn-enigme:hover {
+    filter: drop-shadow(0 0 20px var(--White-color));
+}
+
+@media (max-width: 800px) {
+    #defi {
+        background-size: contain;
+        background-position: center;
+        height: auto;
+        margin: 100px 0px;
+        justify-content: center;
+    }
+
+    #defi .card-defi {
+        width: 90%;
+        margin: 0;
+    }
+
+    #defi .card-defi .titre-defi {
+        font-size: 48px;
+        width: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    #defi .card-defi .titre-defi .paragraphe {
+        background-size: contain;
+        background-position: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .main-enigme {
+        margin-left: 0%;
+    }
+
+    .main-enigme .entete {
+        letter-spacing: 0.25em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-enigme .content-enigme {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    .main-enigme .content-enigme .info-enigme {
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .transcription {
+        width: 90%;
+        margin: auto;
+    }
+
+    .transcription form {
+        margin-top: 50px;
+    }
+
+    .transcription form input[type=text] {
+        width: 100%;
+        padding: 0;
+    }
+
+    .transcription form .btn-enigme {
+        margin: auto;
+    }
+}
+
+.btn-form {
+    font-family: "Cantarell";
+    font-style: bold;
+    width: 174px;
+    height: 54px;
+    border-radius: 38px;
+    color: var(--Violet-color);
+    border: 0;
+    background-color: var(--White-color);
+}
+
+.transcription form .btn-enigme {
+    margin-left: 180px;
+    margin-top: 50px;
+}
+
+.transcription form .btn-enigme:hover {
+    filter: drop-shadow(0 0 20px var(--White-color));
+}
+
+.box-popup {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    /* background: linear-gradient(to bottom, #3D2DA6 10%, #021740 100%); */
+}
+
+.box-popup .popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #9E91B7 30%, #3D2DA6 100%);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 30px 30px 15px #021740;
+}
+
+.box-popup .popup p {
+    text-transform: uppercase;
+    font-family: "Cantarell";
+    font-size: 18px;
+    margin: 10px;
+}
+
+.box-popup .popup a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--Violet-color);
+    background-color: var(--White-color);
+    border-radius: 25px;
+    padding: 15px 20px;
+    margin: 50px 0px;
+}
+
+.box-popup .popup .chrono {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box-popup .popup .chrono #hour {
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .box-popup {
+        top: 15%;
+        left: 5%;
+        width: 90%;
+        height: 70%;
+    }
+}
+
+#btn-popup {
+    cursor: pointer;
+}
+

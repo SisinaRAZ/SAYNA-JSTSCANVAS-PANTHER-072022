@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Panther | Enigme</title>
     <link rel="stylesheet" href="Styles/Enigme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,6 +37,19 @@
         </nav>
     </header>
 
+    <div class="box-popup" id="box-popup">
+        <div class="popup">
+            <p id="titre_popup">Ton initiation est terminée ! </p>
+            <a id="btn-popup"> Revenir à l'accueil</a>
+            <div class="chrono" id="chrono">
+                <img src="Illustrations/3_Page_Enigme/figma_logo.svg" alt="figma">
+                <p>
+                    Coming soon <span id="hour">00:00:05</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section class="hero-enigme">
             <div class="div-hero-enigme">
@@ -45,7 +60,7 @@
                             rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la vie.
                             Leur Générale, Okoyé est également la dirigeante des forces armées et des
                             renseignements wakandais.
-                            
+
                             <br>
                             La réussite de cette évaluation ne dépend pas de la chance mais bel et bien de
                             l’entrainement que tu as suivi jusqu’ici ainsi que de ta détermination. Relève ce défi et
@@ -60,40 +75,49 @@
             </div>
         </section>
 
-        <section id="text-enigme">
-            <h3>" SI JE SUIS FIDELE C’EST A CE TRONE
-                <br> PEU IMPORTE QUI MONTE DESSUS "
-            </h3>
-            <div class="enigme-droite">
-                <p>Voici la transicription de l’alphabet :</p>
-                <p>A = <span class="car">A</span> ; B = <span class="car">b</span> ; c = <span class="car">c</span> ; d
-                    = <span class="car">d</span> ; e = <span class="car">e</span> ; f = <span class="car">f</span> ; g =
-                    <span class="car">g</span> ; h = <span class="car">h</span> ; i = <span class="car">i</span> ; j =
-                    <span class="car">j</span> ;<br>
-                    k = <span class="car">k</span> ; l = <span class="car">l</span> ; m = <span class="car">m</span> ; n
-                    = <span class="car">n</span> ; o = <span class="car">o</span> ; p = <span class="car">p</span> ; q =
-                    <span class="car">q</span> ; r = <span class="car">r</span> ; s = <span class="car">s</span> ; t =
-                    <span class="car">t</span> ;<br>
-                    u = <span class="car">u</span> ; w = <span class="car">w</span> ; x = <span class="car">x</span> ; y
-                    = <span class="car">y</span> ; z = <span class="car">z</span>
-                </p>
-                <p id="form">Alors, as tu la réponse ?</p>
-                <input type="text" placeholder="Réponse">
-                <div id="div-btn">
-                    <button>ENVOYER</button>
-                </div>
-            </div>
-            <div class="question">
-                <div>
-                    <p>Le savais tu ?<br><br>
-                        Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est
-                        la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une
-                        phrase. Et si tu regardais quel symbole revient le plus souvent ?
-                    </p>
-                    <img id="hero-img1" src="Illustrations/Enigme/Pantherenigme2.png" alt="Du style">
+        <section id="enigme">
+            <div class="main-enigme">
+
+                <h2 class="entete" id="number_enigme"> ENIGME NUMERO i</h2>
+                <div class="content-enigme">
+                    <div class="transcription">
+                        <p id="enonce">
+                            Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, et
+                            apprend par la même occasion la première valeur d’ une Dora Milaje!
+                        </p>
+                        </p>
+                        <br>
+                        <p id="enigme-text">
+                            <span class="panthera-letter"> "SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE
+                                DESSUS "</span>
+
+                        <form action="" id="enigme-form">
+                            <label for="reponse">Alors, as tu la réponse ?</label> <br>
+                            <input type="text" name="reponse" id="reponse" placeholder="Réponse"> <br>
+                            <input type="submit" value="ENVOYER" class="btn-form btn-enigme">
+                        </form>
+                    </div>
+                    <div class="info-enigme">
+                        <p>
+                        <p id="a_savoir">
+                            <span>Voici la transicription de l’alphabet :</span> <br>
+                            <span class="alphabet">
+                                A = <span> A </span> ; B = <span> B </span>; C = <span> C </span> ; D = <span> D </span>
+                                ; E = <span> E </span> ; F = <span> F </span> ; G = <span> G </span> ; H = <span> H
+                                </span> ;
+                                I = <span> I </span> ; J = <span> J </span> ; K = <span> K </span> ; L = <span> L
+                                </span> ; M = <span> M </span> ; N = <span> N </span> ; O = <span> O </span> ; P =
+                                <span> P </span> ; Q = <span> Q </span> ; R = <span> R </span> ; S = <span> S </span> ;
+                                T =<span> T </span>; U = <span> U </span> ; W = <span> W </span> ; X = <span> X </span>
+                                ; Y = <span> Y </span> ; Z = <span> Z </span>
+                            </span>
+                        </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
 
 
@@ -126,6 +150,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="Script/enigme.js"></script>
 
 </body>
 
